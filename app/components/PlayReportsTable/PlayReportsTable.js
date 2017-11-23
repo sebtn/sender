@@ -19,7 +19,7 @@ class PlayReportsTable  extends Component  {
 
 const mapDispatchToProps =  dispatch => {
   return bindActionCreators({
-    startPlaysFetch: dispatch( actionCreators.startPlaysFetch() ),    
+    // startPlaysFetch: dispatch( actionCreators.startPlaysFetch() ),    
     // getPlayNextData: dispatch( actionCreators.getPlayNextData(json) ) 
   }, dispatch)
 }

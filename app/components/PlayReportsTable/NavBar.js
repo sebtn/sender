@@ -11,6 +11,8 @@ import FavoritesMulticredit from './FavoritesMulticredit'
 import NormalPlayNext from './NormalPlayNext'
 import JukeMobileBackground from './JukeMobileBackground'
 
+import TableNormalVsPlayNext from '../TablesRefactor/NormalVsPlaynext/TableNormalVsPlayNext.js'
+
 function TabContainer(props) {
   return <div style={{ padding: 0, margin: 0 }}>{props.children}</div>
 }
@@ -51,12 +53,12 @@ class NavBar extends Component {
             <Tabs value={value} onChange={this.handleChange} >
               <Tab className={classes.tab} label="Favorite / Multi-Credits" />
               <Tab className={classes.tab} label="Normal / Play Next" />
-              <Tab className={classes.tab} label="Jukebox / Mobile / Background" href="#Play-report-tables" />
+              {/* <Tab className={classes.tab} label="Jukebox / Mobile / Background" href="#Play-report-tables" /> */}
             </Tabs>
         </AppBar>
         {value === 0 && <TabContainer> <FavoritesMulticredit /> </TabContainer>}
-        {value === 1 && <TabContainer> <NormalPlayNext /> </TabContainer>}
-        {value === 2 && <TabContainer> <JukeMobileBackground /> </TabContainer>}
+        {/* {value === 1 && <TabContainer> <NormalPlayNext /> </TabContainer>} */}
+        {value === 2 && <TabContainer> <TableNormalVsPlayNext /> </TabContainer>}
         {/* {value === 3 && <TabContainer> <TimelineDropDown /></TabContainer>} */}
       </div>
     )

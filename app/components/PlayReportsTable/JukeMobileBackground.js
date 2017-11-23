@@ -257,7 +257,7 @@ class JukeMobileBackground extends Component {
 
   render() {
     const { classes } = this.props
-    const { plays } = this.props.plays
+    const { plays } = this.props
     const { data, order, orderBy, selected, rowsPerPage, page } = this.state
 
     return (

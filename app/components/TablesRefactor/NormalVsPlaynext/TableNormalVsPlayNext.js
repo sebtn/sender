@@ -59,28 +59,6 @@ NormalPlayNext.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-const playsNowSelector = plays => {
-  // check if the jukeId match for same string
-  // plays.filter(id => juke.id ===id)
-  // check if playNow is false or true
-  // when true add a sum of playCount to a cell called playNext
-  // whne false add a sum of playCount to a cell called normal 
-
-  // if()
-  // const fileterdPlays = plays.filter(state.plays.playNow === true) 
-  // state.plays.playcount
-  
-  // return filteredPlays.toJS()
-}
 
 
-const mapStateToProps = state => {
-  const { plays } = state
-  return {
-    plays: plays.toJS(),
-  }
-}
-
-const styled =  withStyles(styles)(NormalPlayNext)
-
-export default connect(mapStateToProps)(styled)
+export default withStyles(styles)(NormalPlayNext)
